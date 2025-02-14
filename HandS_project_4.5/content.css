@@ -1,0 +1,154 @@
+
+/* 정치 성향에 따른 테두리 스타일 */
+.jinbo-border {
+    border: 4px solid blue !important;
+    border-radius: 8px;
+  }
+  
+  .bosu-border {
+    border: 4px solid red !important;
+    border-radius: 8px;
+  }
+  
+  .neutral-border {
+    border: 4px solid yellow !important;
+    border-radius: 8px;
+  }
+  
+  .youtube-video-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 360px; /* 유튜브 카드 크기에 맞춤 */
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 16px;
+  }
+  
+  .youtube-thumbnail {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background-color: #ddd;
+  }
+  
+  .youtube-thumbnail iframe {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .youtube-video-info {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .youtube-channel-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #ccc;
+  }
+  
+  .youtube-video-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #0f0f0f;
+    line-height: 1.4;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .youtube-channel-name {
+    font-size: 12px;
+    color: #606060;
+  }
+
+/* 💡 유튜브 스타일과 비슷한 가상의 CSS */
+.video-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 360px;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 16px;
+}
+
+.thumbnail {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 12px 12px 0 0;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.duration {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  font-size: 12px;
+  padding: 3px 6px;
+  border-radius: 4px;
+}
+
+.video-info {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+}
+
+.channel-container {
+  flex-shrink: 0;
+}
+
+.channel-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.text-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 4px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;  /* 최대 2줄 */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+
+.channel {
+  font-size: 14px;
+  color: #606060;
+}
+
+.views {
+  font-size: 12px;
+  color: #888;
+}

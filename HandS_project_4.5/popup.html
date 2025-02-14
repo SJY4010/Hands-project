@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>정치 성향 분석</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>정치 성향 분석</h1>
+
+    <!-- 슬라이더 -->
+    <input type="range" id="political-slider" min="0" max="100" value="50" />
+    <p id="percentage-label">보수: 50%, 진보: 50%</p>
+
+    <!-- 분석 시작 버튼 -->
+    <button id="start-analysis-btn">분석 시작</button>
+
+    <!-- 상태 메시지 -->
+    <p id="status-message">상태: 크롤링 중...</p>
+
+    <button id="apply-slider-btn">슬라이드 적용</button>
+
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
